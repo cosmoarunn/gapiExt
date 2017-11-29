@@ -1,5 +1,7 @@
 /*
+ * gapiExt.js
  * gapiExt.gChart - A jquery widget for both Chart and Table for the data
+ * 
  * Author : Arun Panneerselvam
  */
 

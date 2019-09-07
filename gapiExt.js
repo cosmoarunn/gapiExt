@@ -6,7 +6,7 @@
  */
 
     $.widget("gapiExt.gChart", {
-
+        //Chart options 
         options: {
             id : null,
             chart_id: null,
@@ -27,11 +27,12 @@
             bar: {groupWidth: "95%"},
             //colors: ['#F7F70E', '#BAD3F3', '#116A2C', '#0D2153', '#DB57F3', '#DAF0D6','#F4C1A1', '#F0F0F0'],
         },
-
+        // Update Chart Options
         _setOption: function( key, value ) {
             this.options[ key ] = value;
             this._update();
         },
+        
         id: function(id) {
             if(id === "undefined") {
                 return this.id;
@@ -50,16 +51,19 @@
                 //draw the chart again here when the data changed
             }
         },
-
+        // Check supplied data is a valid array 
         _validate: function(data) {   //Check data for google chart accepted values
             return data.every(function(row) { if(row instanceof Array) return true; });
         },
-
+        //get the data for the chart object
         getChartData: function(id) {
             return this.data();
         },
 
-        //Private methods
+        /*
+            Private methods
+        */
+        // Draw the chart on the container
         _create: function() {
 
             this.element.addClass(this.options.class);
@@ -70,6 +74,7 @@
             }catch(e) { console.log(e); }
             if(this.options.table) this._drawTable();
         },
+        
         _exists: function(o) {
             return $(o).length > 0;
         },

@@ -1,6 +1,6 @@
 # gapiExt
 **A jQuery plugin for gapi to draw both Chart and Table for supplied (Google Visualization) data**
-![google chart](https://www.github.com/cosmoarunn/gapiExt/blob/master/gChart.png)
+![google chart](https://github.com/cosmoarunn/gapiExt/blob/master/gChart.png)
 
 ## [Live Demo](https://www.gsunitedtechnologies.com/analytics/) | [Documentation](https://https://www.gsunitedtechnologies.com/analytics/docs/)
 

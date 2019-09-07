@@ -27,7 +27,11 @@ $("#chart-container").gChart ({
     colors: ['#F7F70E', '#BAD3F3', '#116A2C', '#0D2153', '#DB57F3', '#DAF0D6','#F4C1A1', '#A7A7A7'], 
 });
 ```       
-        
+ To show the chart data on the table, use     
+ ```
+ table: true,
+ ```
+      
         
 ## License (MIT)
 Copyright (c) 2017 cosmoarunn, https://github.com/cosmoarunn/gapiExt
